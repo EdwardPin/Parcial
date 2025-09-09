@@ -1,12 +1,12 @@
 import re
 
-texto = ("Bonjour! En 2025, 17 ingénieurs créent ensemble. Liste: règle, compas, plan. Le prix est de 68,30€. Les étoiles (★) brillent la nuit. 13 chats dessinent, 12 chiens calculent. Le code #7788 est spécial. 16 jours de projet, 10 jours de repos. @tous créent. Le numéro magique est 919. Que feriez-vous avec 48,80€? La réponse est dans la liste: dessiner, calculer, créer. Construisez votre avenir! 100 mots, 16 entiers, 3 décimaux, 2 listas.")
+texto = ("Ciao! Nel 2025, 18 ingegneri progettano insieme. Lista: righello, compasso, piano. Il prezzo è €65,90. Le stelle (★) brillano sopra il progetto. 12 gatti disegnano, 11 cani calcolano. Il codice #9911 è speciale. 15 giorni di lavoro, 11 di riposo. @tutti progettano. Il numero magico è 929. Cosa faresti con 42,80€? La risposta è nella lista: disegnare, calcolare, creare. Costruisci il tuo futuro! 100 parole, 15 interi, 3 decimali, 2 listas.")
 
 enteros   = r"-?\b\d+\b"              
 flotante  = r"-?\b\d+\,\d+\b"
 booleano  = r"\b(True|False)\b"
 string    = r'"([^"]*)"'              
-listas = r"(?i)\bliste:\s*([^\.\n]+)"  # Encuentra la palabra liste (lista en frances) y continua HASTA el punto
+listas = r"(?i)\blista*([^\.\n]+)"  # Encuentra la palabra lista y continua HASTA el punto
 palabras = r"[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+"   # lee el número declarado de palabras
 
 resul_enteros = re.findall(enteros, texto)
