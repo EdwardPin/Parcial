@@ -7,7 +7,7 @@ flotante  = r"-?\b\d+\,\d+\b"
 booleano  = r"\b(True|False)\b"
 string    = r'"([^"]*)"'              
 listas = r"(?i)\blista*([^\.\n]+)"  # Encuentra la palabra lista y continua HASTA el punto
-palabras = r"[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+"  # Lee desde la A-Z mayuscula, luego minuscula, y luego cada caracter especial (tilde, Ñ)
+palabras = r"[A-Za-zÁÉÍÓÚáàéèíìóòúùÜüÑñ]+"  # Lee desde la A-Z mayuscula, luego minuscula, y luego cada caracter especial (tilde, Ñ)
 
 resul_enteros = re.findall(enteros, texto)
 resul_float   = re.findall(flotante, texto)
