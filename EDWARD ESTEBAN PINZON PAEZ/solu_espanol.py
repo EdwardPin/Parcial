@@ -11,7 +11,7 @@ enteros   = r"-?\b\d+\b"
 flotante  = r"-?\b\d+\.\d+\b"
 booleano  = r"\b(True|False)\b"
 string    = r'"([^"]*)"'              
-listas = r"(?i)\blista:\s*([^\,\n]+)"  # Encuentra la palabra lista y continua HASTA el punto
+listas = r"(?i)\blista:\s*([^\.\n]+)"  # Encuentra la palabra lista y continua HASTA el punto
 palabras = r"[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+"   # lee el número declarado de palabras
 
 resul_enteros = re.findall(enteros, texto)
