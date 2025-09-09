@@ -7,7 +7,7 @@ flotante  = r"-?\b\d+\,\d+\b"
 booleano  = r"\b(True|False)\b"
 string    = r'"([^"]*)"'              
 listas = r"(?i)\bliste:\s*([^\.\n]+)"  # Encuentra la palabra liste (lista en frances) y continua HASTA el punto
-palabras = r"[A-Za-zÁÉÍÓÚáéíóúÜüÑñ]+"   # lee el número declarado de palabras
+palabras = r"[A-Za-zÁÉÍÓÚáàéèíìóòúùÜüÑñ]+"   # lee el número declarado de palabras
 
 resul_enteros = re.findall(enteros, texto)
 resul_float   = re.findall(flotante, texto)
